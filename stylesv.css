@@ -1,0 +1,1136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/****************************** Debut popup__action ********************************/
+
+.popup__action .popup-screen {
+  position: fixed;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+
+.popup__action .popup-screen.active {
+  visibility: visible;
+}
+
+.popup__action .popup-box {
+  position: relative;
+  background-color: white;
+  margin: 20px auto;
+  right: 37px;
+  width: 300px;
+  border-radius: 8px;
+  padding: 20px 30px;
+  top: 155px;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  display: flex;
+  transform: scale(0);
+  transition: 0.5s ease;
+  transition-property: transform;
+
+}
+
+.popup__action .popup-screen.active .popup-box {
+  transform: scale(1);
+}
+
+.popup__action .popup-box h2 {
+  position: relative;
+  text-align: center;
+  color: rgb(87, 86, 86);
+  font-size: 25px;
+  top: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.popup__action .popup-box .btn {
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  background: rgb(206, 131, 131);
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.popup__action .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: transparent;
+  color: #ffffff;
+  background: rgb(206, 131, 131);
+  transition: 0.3s ease;
+}
+
+.popup__action .close-btn:hover {
+  color: black;
+}
+
+.popup__action .popup-box p {
+  position: relative;
+  font-size: 13px;
+  top: 9px;
+  left: 5.5px;
+}
+
+
+/****************************** Fin popup__action ********************************/
+
+
+
+/***************************** Debut inscription user *****************/
+
+/*.regis-c-user{
+    background:linear-gradient(100deg, #dbd8d9,#c0b5c7,rgb(255, 245, 245));
+
+}*/
+
+.regis-c-user .container {
+  position: relative;
+  padding: 20px 0px;
+
+}
+
+
+
+.inscript-form-ux {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+
+}
+
+.inscript-form-ux .wapper-ins {
+  position: relative;
+  width: 400px;
+  border-radius: 4px;
+  padding: 15px 30px;
+  border: 1px solid rgb(206, 162, 162);
+  /*background: rgb(250, 249, 249);
+    box-shadow: rgb(0,0,0) 0px 5px 5px;*/
+}
+
+.inscript-form-ux .wapper-ins h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(165, 163, 163);
+  ;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inscript-form-ux .form-group label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 17px;
+}
+
+.inscript-form-ux .form-group input {
+  outline: none !important;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+  border: 2px solid #91a191;
+  caret-color: #d87187;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  padding: 17px;
+  font-size: 17px;
+}
+
+.inscript-form-ux .form-group input:focus,
+.form-group.valid input {
+  border-color: #d87187;
+}
+
+
+.inscript-form-ux .form-group input::placeholder {
+  color: #b3b2b4;
+  font-size: 15px;
+}
+
+
+.inscript-form-ux .btn {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d87187;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 1rem;
+  bottom: 7px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.inscript-form-ux .btn:hover {
+  background: brown
+}
+
+.meconnecter {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
+
+.meconnecter .ins {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  color: rgb(163, 182, 145);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+}
+
+.form-group .super_position {
+  display: flex;
+  gap: 1px;
+}
+
+
+.form-group .super_position select {
+  outline: none !important;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+  border: 2px solid #91a191;
+
+  border-radius: 3px;
+  display: block;
+
+}
+
+
+/***************************** Fin inscription user *****************/
+
+
+/***************************** Debut inscription costumer *****************/
+
+.regis-c-userx{
+  margin-bottom: -200px;
+}
+
+.active {
+  display: block !important;
+}
+
+.regis-c-userx .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem 1.5rem;
+}
+
+
+.regis-c-userx .image__wrapper img{
+  position: relative;
+  max-width: 100%;
+  left: 70px;
+  width: 560px;
+  height: 330px;
+  display: block;
+  border-radius: 5px;
+}
+
+.regis-c-userx .form__wrapper {
+  position: relative;
+  justify-self: center;
+  bottom: 250px;
+  left: 250px;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid rgb(219, 141, 141);
+  width: 480px;
+
+}
+.regis-c-userx .form__wrapper .form-group label {
+  margin-bottom: -0.5rem;
+}
+
+
+.regis-c-userx .form__wrapper .form-group input {
+  outline: none !important;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+  border: 2px solid #91a191;
+  caret-color: #d87187;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  padding: 17px;
+  font-size: 17px;
+}
+
+.regis-c-userx .form__wrapper .form-group input:focus,
+.form-group.valid input{
+  border-color: #d87187;
+}
+
+
+
+.regis-c-userx .form__wrapper .form-group::placeholder {
+  color: #b3b2b4;
+  font-size: 15px;
+}
+
+.regis-c-userx .form {
+  display: none;
+}
+
+.regis-c-userx .form__wrapper  .title-c{
+  position: relative;
+  text-align: center;
+  bottom: 15px;
+  margin-bottom: 1rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(160, 196, 160);
+}
+
+.regis-c-userx .form__wrapper  .subtitle{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background: rgb(207, 194, 194);
+}
+
+.regis-c-userx .form__wrapper .fintitle{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: white;
+  background: rgb(206, 35, 35);
+}
+
+.regis-c-userx .button {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d87187;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  padding: 7px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+
+.regis-c-userx .button--filled {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d87187;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 7px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.regis-c-userx .button--filled :hover{
+  background: brown
+}
+
+
+.regis-c-userx .button--outlined {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #d87187;
+  background: none;
+  border-radius: 5px;
+  margin-top: -10px;
+  outline: none;
+  color: gray;
+  padding: 7px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+
+.regis-c-userx .button--outlined:hover{
+  color: white;
+  background: brown
+}
+
+
+
+.regis-c-userx .form__wrapper .password-icon{
+  display: flex;
+  position: relative;
+  float: right;
+
+
+}
+
+.regis-c-userx .form__wrapper .password-icon .vuemo{
+ position: absolute; 
+ font-size: 12px;
+ right: 8px;
+ bottom: 12px;
+ 
+}
+
+.regis-c-userx .form__wrapper .password-icon:hover{
+ cursor: pointer;
+ color: #fa636d;
+
+
+}
+
+
+.aver-c{
+  position: relative;
+  background-color: #efeef0;
+  padding: 0px 10px;
+  bottom: 10px;
+}
+
+.precision_X{
+  position: relative;
+  background-color: #efeef0;
+  padding: 0px 10px;
+  bottom: 10px;
+}
+
+/***************************** Fin inscription costumer *****************/
+
+
+
+
+
+
+
+
+
+/*Debut langue*/
+
+.logo img{
+  position: relative;
+  margin: 3px;
+  width: 140px;
+  height: 50px;
+  left: 30px;
+}
+
+nav{
+  width: 80%;
+  margin:0 auto;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  background-color: white;
+  border: 2px solid rgb(238, 236, 236);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+.langmenu{
+  position: relative;
+  float: right;
+  bottom: 45px;
+  right: 40px;
+  width: 107px;
+  margin: -5px; 
+    
+}
+
+.select-langmenu{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(228, 225, 225);
+  position:relative;
+}
+
+
+
+.select-langmenu select{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  padding-left: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance:none ;
+   cursor: pointer;
+   
+}
+
+.select-langmenu select:hover{
+  background: rgb(241, 236, 234);
+  border-radius: 5px;
+}
+
+.select-langmenu:after{
+  content: 'expand_more';
+  font-family: 'material icons';
+  position: absolute;
+  font-size: 24px;
+  color: #666;
+  right: 5px;
+  top: 53%;
+  transform: translateY(-50%);
+  pointer-events:none ;
+}
+
+/* fin langue*/
+
+
+
+
+/* debut connexion*/
+
+.wrapper{
+    position: relative;
+    width: 385px;
+    margin: 50px auto ;
+    padding: 40px 30px 50px 30px;
+    background: rgb(250, 249, 249);
+    box-shadow: rgb(0,0,0) 0px 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  .wrapper h5{
+    color: rgb(165, 163, 163);
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .wrapper form{
+    margin: 40px 0;
+  }
+  form .field{
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  form .field.shake{
+    animation: shake 0.3s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -12px;
+    }
+    40%, 60%{
+      margin-left: 12px;
+    }
+  }
+  form .field .input-area{
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+  
+  form .field input:focus,
+  form .field.valid input{
+    border-color: #d87187;
+  }
+  form .field.shake input,
+  form .field.error input{
+    border-color:rgb(253, 9, 9)
+  }
+  .field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .input-area .icon{
+    left: 15px;
+    color: #252525;
+    transition: color 0.2s ease;
+  }
+  .input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+  }
+  form input:focus ~ .icon,
+  form .field.valid .icon{
+    color: #d87187;
+  }
+  form .field.shake input:focus ~ .icon,
+  form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+  }
+  form input::placeholder{
+    color: #a19d9d;
+    font-size: 15px;
+  }
+  form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  form .field .error{
+    display: none;
+  }
+  form .field.shake .error,
+  form .field.error .error{
+    display: block;
+  }
+
+ 
+
+
+  .wrapper  .blod-s{
+    display: flex;
+    font-size: 13px;
+    gap: 100px;
+    justify-content: space-around;
+  }
+
+  
+  .wrapper .re-password{
+    position: relative;
+    top: -4px;
+  
+    
+  }
+ 
+  .wrapper .remerberx{
+    position: relative;
+    display: block;
+  }
+
+  form .remerberx label{
+  position: relative;
+  top: -18px;
+  left: 16px;
+
+  }
+
+  .wrapper .remerberx input[type="checkbox"]{
+    position: relative;
+    cursor: pointer;
+    height: 13px;
+    right: 30px;
+   
+
+  }
+
+
+  
+  .wrapper a{
+    color: #5372F0;
+    text-decoration: none;
+  }
+  .wrapper a:hover{
+    text-decoration: underline;
+  }
+
+
+
+  form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #d87187;
+    border-radius: 3px;
+    border: 1px solid #818381;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+  }
+
+
+  form button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #d87187;
+    border-radius: 3px;
+    border: 1px solid #818381;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+  }
+
+  
+
+  form button[type="submit"]{
+    position: relative;
+    height: 40px;
+    margin-top: 20px;
+    color: #fff;
+    padding: 0px;
+    border-radius: 5px;
+    border: none;
+    bottom: 20px;
+    background: #d87187;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  form input[type="submit"]:hover{
+    background: brown
+  }
+
+ .wapper-ins .password-icon{
+     display: flex;
+     position: relative;
+     float: right;
+
+   
+  }
+
+  .wapper-ins .password-icon .vuemo{
+    position: absolute; 
+    font-size: 12px;
+    right: 8px;
+    bottom: 12px;
+    
+  }
+
+  .wapper-ins .password-icon:hover{
+    cursor: pointer;
+    color: #fa636d;
+
+
+  }
+
+  .password-icon .fa-eye-slash{
+    display: none;
+  }
+  
+  .sign-txt{
+      position: relative;
+      bottom: 40px;
+  }
+  
+  .pourc{
+      position: relative;
+      align-items: center;
+      bottom:27px ;
+    
+  }
+
+ .baspages{
+   margin: 0px;
+   margin-top: px;
+   padding: 0px;
+   background: rgb(236, 234, 234);
+
+ }
+
+ .quick-links{
+  display: flex;
+  width: 350px;
+  height: 70px;
+  margin: auto;
+ }
+
+ .quick-links ul{
+  display: flex;
+ 
+}
+
+.quick-items{
+  list-style: none;
+}
+
+.quick-items a{
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  padding: 0px 15px;
+  color: blue;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.quick-items a:hover{
+  text-decoration: underline;
+}
+
+.copy-links{
+  position: relative;
+  top: -25px;
+  width: 455px;
+  font-size: 17px;
+  margin: auto;
+}
+
+
+
+
+.btnRow{
+    position: absolute;
+    box-shadow: 1px 1px 5px -4px rgba(0,0,0,2);
+    padding: 1px 1px;
+    width: 85%;
+    margin: -10px auto;
+    transition: all 0.2s;
+   
+  
+}
+
+
+.btnGroup{
+    align-items: center;
+    width: 15%;
+    justify-content: left;
+    font-size: 16px;
+    border-radius: 100px;
+    
+}
+
+.btnGroup img {
+    align-items: center;
+    width: 32px;
+    height: 30px;
+    margin-right: 10px;
+    
+}
+
+/* fin inscription*/
+
+
+
+.barriere{
+  background: rgb(248, 248, 248);
+  height: 32px;
+  margin-top: 30px;
+ 
+}
+
+.autoplayin{
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  
+  position: absolute;
+  
+}
+.txt {
+  position: relative;
+  white-space: nowrap;
+  font-family: cursive;
+  color: #bdb9b9;
+  font-size: 22px;
+  left: 100px;
+  text-align: center;
+  font-weight: bold;
+  animation: scrollTxt 20s linear infinite;
+}
+
+
+@keyframes scrollTxt {
+  0%{
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+/************************************************* Debut @ responsive*******************************************************/
+
+@media screen and (max-width: 728px){
+
+  .Inscriptions{
+    overflow-x: hidden;
+  }
+
+  .regis-c-user{
+    overflow-x: hidden;
+}
+
+  .barriere{
+    overflow-x: hidden;
+
+  }
+
+  .baspages{
+    overflow-x: hidden;
+
+  }
+  
+ 
+
+  nav{
+    width: 100%;
+    float: left;
+   
+    
+  }
+
+  .logo img{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    top: 7px;
+    left: 7px;
+  }
+
+  .langmenu{
+    position: relative;
+    bottom: 20px;
+    font-size: 5px;
+
+  }
+
+  .select-langmenu{
+    padding: 5px;
+    border-radius: 5px;
+    left: 25px;
+    border: 1px solid rgb(228, 225, 225);
+    position:relative;
+  }
+  
+  .select-langmenu select{
+    font-size: 12px;
+  }
+
+  .select-langmenu:after{
+    font-size: 15px;
+    right: 2px;
+    top: 15px;
+  }
+
+
+  
+.wrapper{
+  position: relative;
+  width: 95%;
+  margin: 100px auto ;
+  padding: 55px 30px 50px 30px;
+  background: rgb(250, 249, 249);
+  box-shadow: rgb(0,0,0) 0px 5px 5px;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+  .wrapper h5{
+    position: relative;
+    top: -35px;
+    font-size: 25px;
+    margin-bottom: -50px;
+    font-weight: 600;
+  }
+
+
+   .btnRow img{
+     height: 25px;
+     width: 25px;
+   }
+
+
+   .copy-links{
+    position: relative;
+    top: -25px;
+    width: 455px;
+    font-size: 14px;
+    margin-bottom: 20px;
+   
+  }
+
+
+
+  .wrapper  .blod-s{
+    display: flex;
+    font-size: 13px;
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  
+  .wrapper .re-password{
+    position: relative;
+    top: -4px;
+  
+    
+  }
+ 
+  .wrapper .remerberx{
+    position: relative;
+    display: block;
+  }
+
+  form .remerberx label{
+  position: relative;
+  top: -22px;
+  left: -22px;
+
+  }
+
+  .wrapper .remerberx input[type="checkbox"]{
+    position: relative;
+    cursor: pointer;
+    top: -4.5px;
+    height: 13px;
+    left: 6px;
+   
+
+  }
+
+  .inscript-form-ux {
+    display: block
+  }
+
+
+  .inscript-form-ux .wapper-ins{
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px 15px;
+    border: 1px solid rgb(206, 162, 162);
+    /*background: rgb(250, 249, 249);
+    box-shadow: rgb(0,0,0) 0px 5px 5px;*/
+}
+
+
+.regis-c-user .container{
+  position: relative;
+  padding: 20px 10px;
+
+}
+
+.inscript-form-ux .wapper-ins-c{
+position: relative;
+width: 100%;
+border-radius: 4px;
+padding: 15px 30px;
+border: 1px solid rgb(206, 162, 162);
+/*background: rgb(250, 249, 249);
+box-shadow: rgb(0,0,0) 0px 5px 5px;*/
+}
+
+
+.inscript-form-ux .wapper-ins-c h4{
+  font-size: 18px;
+  text-align: left;
+}
+
+.popup__action .popup-box{
+  right: 0px;
+}
+
+
+/*****************************Debut brouillons responsive*************************/
+
+.box-brouillons .board h5{
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*******************************Fin brouillons responsive***********************/
+
+
+
+   
+
+
+/***************************** Debut inscription costumer responsive *****************/
+
+.regis-c-userx{
+  margin-bottom: -230px;
+}
+
+
+.regis-c-userx .image__wrapper img{
+  position: relative;
+  max-width: 100%;
+  left: -22px;
+  height: 300px;
+  height: 300px;
+  display: block;
+}
+
+.regis-c-userx .form__wrapper {
+  position: relative;
+  justify-self: center;
+  bottom: 200px;
+  left: 0px;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid rgb(219, 141, 141);
+  width: 110%;
+
+}
+
+
+/***************************** Fin inscription costumer responsive*****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+   
+
+/************************************************* fin @ responsive*******************************************************/

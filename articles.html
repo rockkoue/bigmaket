@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+
+
+
+    <title>profil utilisateur</title>
+
+    <!--Google foont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!--css link -->
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+
+    <!--pour la barre de recherche a l'acceuil -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--boxicon-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--script carousel-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+</head>
+
+
+<body>
+
+
+    <!--debut de la barre de navigation-->
+    <section id="navigationx">
+        <sticky class="capou">
+            <input type="checkbox" id="check">
+            <navbar class="indexnav">
+                <div class="monlogo1">
+                    <div class="monlogo">
+                        <a href="index.html">
+                            <img src="E:\projectxxx\images\LOGO 2.jpeg" class="logox1">
+                            <img src="E:\projectxxx\images\WhatsApp Image 2021-10-10 at 11.38.03.jpeg" class="logox2">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="super-traits"></div>
+
+                <div class="monmagasin-v">
+                    <div class="magasin-t-btn">
+                        <a class="  btn btn-warning" href="magasin.php">Mon magasin</a>
+                    </div>
+                </div>
+
+                <div class="wrapper-index">
+                    <div class="bost-rep">
+                        <form autocomplete="off">
+                            <button type="button" class="btn btn-success">Bost ton magasin</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="detailsU">
+
+                    <ul class="Uti-ax">
+
+                        <li class="messages">
+                            <div class="messages-N">
+                                <a class="nav-link" href="#"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </li>
+
+                        <li class="jaimes">
+                            <div class="jaimes-N">
+                                <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                            </div>
+                        </li>
+
+                        <li class="nav-not-x">
+                            <div class="wrapperN">
+                                <div class="notification_wrap">
+                                    <div class="notification_icon">
+                                        <i class="bi bi-bell"></i>
+                                    </div>
+                                    <div class="dropdown">
+                                        <h2>Notifications <span>4</span> </h2>
+                                        <div class="fonctions">
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                            <span><i class="far fa-trash-alt"></i></span>
+                                            <input type="checkbox" name="all" id="all" value="all"><label
+                                                for=all></label>
+                                        </div>
+                                        <hr>
+                                        <div class="scroll-bgu">
+                                            <div class="scroll-classu">
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                                            alt="profile_pic" style="width: 50px">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p> la planette des enfants <span> viens d'ajouter une chemise
+                                                            </span></p>
+                                                        <span class="notify_time">Il y a 10 minutes</span>
+                                                        <div class="Commandes">
+                                                            <input class="selections" type="checkbox">
+
+                                                            <p class="intu"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                                            alt="profile_pic" style="width: 50px">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p> la planette des enfants <span> viens d'ajouter une chemise
+                                                            </span></p>
+                                                        <span class="notify_time">Il y a 10 minutes</span>
+                                                        <div class="Commandes">
+                                                            <input type="checkbox">
+
+                                                            <p class="intu"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                                            alt="profile_pic" style="width: 50px">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p> la planette des enfants <span> viens d'ajouter une chemise
+                                                            </span></p>
+                                                        <span class="notify_time">Il y a 10 minutes</span>
+                                                        <div class="Commandes">
+                                                            <input type="checkbox">
+
+                                                            <p class="intu"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                                            alt="profile_pic" style="width: 50px">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p>la planette des enfants <span> viens d'ajouter une chemise
+                                                            </span></p>
+                                                        <span class="notify_time">Il y a 10 minutes</span>
+                                                        <div class="Commandes">
+                                                            <input type="checkbox">
+
+                                                            <p class="intu"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                                            alt="profile_pic" style="width: 50px">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p>la planette des enfants <span> viens d'ajouter une chemise
+                                                            </span></p>
+                                                        <span class="notify_time">Il y a 10 minutes</span>
+                                                        <div class="Commandes">
+                                                            <input type="checkbox">
+
+                                                            <p class="intu"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                                            alt="profile_pic" style="width: 50px">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p>la planette des enfants <span> viens d'ajouter une chemise
+                                                            </span></p>
+                                                        <span class="notify_time">Il y a 10 minutes</span>
+                                                        <div class="Commandes">
+                                                            <input type="checkbox">
+
+                                                            <p class="intu"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="show_all">
+                                                <p class="link">Afficher toutes les Notifications</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="nav-pr-x">
+
+                            <div class="actions-v-resp">
+                                <div class="actions">
+                                    <div class="profiles">
+                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987"
+                                            alt="profile_img" />
+                                    </div>
+
+                                    <div class="menu">
+
+                                        <ul class="menu-x-box">
+                                            <h5 class="first">Mon compte</h5>
+                                            <li><a href="profil.html">Profil</a></li>
+                                            <li><a>Compte Principal</a> <span class="comptep-x">100000.00F CFA.</span>
+                                                <div class="gele">
+                                                    <i class="far fa-snowflake"></i>
+                                                    <span class="">0.00F CFA.</span>
+                                                </div>
+                                            </li>
+                                            <li><a>Compte bonus</a> <span class="compteB">0.00 Bonnus.</span></li>
+                                            <li><a href="profil.html">Commandes en attente <i
+                                                        class="far fa-grin-hearts"></i></a></li>
+                                            <li><a href="profil.html">Paramètre</a></li>
+                                            <li><a href="profil.html"><i class=" logout bi bi-box-arrow-left "></i>
+                                                    deconnexion</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <ol>
+                    <ul>
+
+                        <li class="nav-pan-x">
+                            <a href="index.html">
+                                <button type="button" class="btn btn-success">Bost ton magasin</button>
+                            </a>
+
+                        </li>
+
+                        <li class="com-cont-x">
+                            <a href="#"><button type="button" class="btn btn-info">Commandes en attente <i
+                                        class="far fa-grin-hearts"></i></button></a>
+
+                        </li>
+
+                        <li class="Pro-cont-x">
+                            <div class="pro-action">
+                                <div class="pro-menu">
+
+                                    <ul class="pro-menu-box">
+                                        <h5 class="first">Mon compte</h5>
+                                        <li><a href="profil.html">Profil</a></li>
+                                        <li><a>Compte Principal</a> <span class="comptep-x">100000.00F CFA.</span>
+                                            <div class="gele">
+                                                <i class="far fa-snowflake"></i>
+                                                <span class="">0.00F CFA.</span>
+                                            </div>
+                                        </li>
+                                        <li><a>Compte bonus</a> <span class="compteB">0.00 Bonnus.</span></li>
+                                        <li><a href="profil.html">Paramètre</a></li>
+                                        <li><a href="profilUtilisateur.html"><i
+                                                    class=" logout bi bi-box-arrow-left "></i> deconnexion</a></li>
+
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
+
+                </ol>
+
+                <label for="check" class="bar-close">
+                    <span class="fa fa-align-right " id="bars"></span>
+                    <span class="fa fa-times " id="times"></span>
+                </label>
+
+            </navbar>
+        </sticky>
+    </section>
+
+    <!--fin de la barre de navigation-->
+
+    <!--debut de la deuxiemme barre de navigation-->
+
+    <section class="navinferieurindex navbar-light bg-light">
+
+        <navbar class="infernav">
+            <ol>
+                <div class="container-xcroll">
+                    <div class="horizontal-scroll">
+                        <button class="btsx btn-scroll" id="btn-scroll-left" onclick="scrollhorizontally(1)"><i
+                                class="fas fa-angle-left"></i></button>
+                        <button class="btsy btn-scroll" id="btn-scroll-right" onclick="scrollhorizontally(-1)"><i
+                                class="fas fa-angle-right show"></i></button>
+
+
+                        <div class="storys-container">
+
+                            <div class="actx jourx-m">
+                                <a class="story-circle btn btn-light" href="Jmarche.html">Jour de Marché</a>
+                            </div>
+
+                            <div class="actx offresx-m">
+                                <a class="story-circle btn btn-light" href="offrejour.html">Offres du Jour</a>
+                            </div>
+
+                            <div class="actx forum-x">
+                                <a class="story-circle btn btn-light" href="solutionr.html"> Space Forum </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </ol>
+            <ul>
+                <div class="langmenu">
+                    <div class="select-langmenu">
+                        <select>
+                            <option value="Francais">Francais</option>
+                            <option value="Anglais">Anglais</option>
+                            <option value="Arabe">Arabe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="aidesindex">
+
+                    <button id="view-modal-uxp"><i class="bi bi-question-square"></i></button>
+
+                    <div id="modalaide">
+                        <div class="modal-contente-aide">
+                            <div class="modal-heder-uxp">
+                                <h2 class="header-uxpa">Réponses instantanées</h2>
+                                <span class="close-btn-ux">&times;</span>
+                            </div>
+                            <div class="modale-aide-body">
+
+                                <div class="scroll-uxp">
+                                    <div class="reponsesinstantane">
+                                        <div class="accordion">
+                                            <div class="accordion-item">
+                                                <div class="accordion-item-header">
+                                                    Comment fonctionne Market Onlile ?
+                                                </div>
+                                                <div class="accordion-item-body">
+                                                    <div class="accordion-item-body-content">
+                                                        bla
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-item-header">
+                                                    Comment effectuer un achat sur Market Online ?
+                                                </div>
+                                                <div class="accordion-item-body">
+                                                    <div class="accordion-item-body-content">
+                                                        nnnnnn
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-item-header">
+                                                    Pourquoi Market Online est un site sûre pour vos achats ?
+                                                </div>
+                                                <div class="accordion-item-body">
+                                                    <div class="accordion-item-body-content">
+                                                        hh
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-item-header">
+                                                    Comment faire de la publicité sur Market Online ?
+                                                </div>
+                                                <div class="accordion-item-body">
+                                                    <div class="accordion-item-body-content">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-item-header">
+                                                    Comment devenir vendeur sur Market Online ?
+                                                </div>
+                                                <div class="accordion-item-body">
+                                                    <div class="accordion-item-body-content">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+        </navbar>
+
+    </section>
+
+    <!--fin de la deuxieme barre de navigation-->
+
+    <section class="m-Articles">
+
+
+        <div class="parametres-para-ux-ligne">
+
+            <div class="param-boxer-ux-ligne">
+                <a href="#" class="btn btn-outline-info">Brouillon</a>
+
+            </div>
+
+
+            <div class="param-action-ux">
+
+                <div class="instruction-title">
+                    <h6>Met ton article en ligne</h6>
+                </div>
+
+                <div class="form-enligne">
+
+                    <p class="title">Ajoute jusqu'à 3 photos.</p>
+
+                    <div class="grid">
+
+                        <div class="form-element">
+                            <input type="file" id="file-1" accept="image/*">
+                            <label for="file-1" id="file-1-preview">
+                                <img src="" alt="">
+                                <div>
+                                    <span>+ Photo 1</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <input type="file" id="file-2" accept="image/*">
+                            <label for="file-2" id="file-2-preview">
+                                <img src="" alt="">
+                                <div>
+                                    <span>+ Photo 2</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <input type="file" id="file-3" accept="image/*">
+                            <label for="file-3" id="file-3-preview">
+                                <img src="" alt="">
+                                <div>
+                                    <span>+ Photo 3</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-ux">
+
+                    <div class="title-ux">
+                        <h5> Catégories * </h5>
+                    </div>
+
+
+                    <div class="position-ux">
+                        <select class="form-select" id="validationCustom04" name="pays">
+                            <option selected disabled>-sélect... la Catégories-</option>
+                            <option value="cote d'ivoire">chemise</option>
+                            <option value="France">Pantalon</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="card-ux">
+
+                    <div class="title-ux">
+                        <h5> Titre de l'article * </h5>
+                    </div>
+
+
+                    <div class="position-ux">
+                        <input class="form-control" type="text" placeholder="">
+
+                    </div>
+
+                </div>
+
+                <div class="precision-ligne">
+                    <p>Ex: Chemise Italienne , Boubou Marocain , Jean Zara</p>
+                </div>
+
+                <div class="card-uxx">
+                    <div class="title-ux">
+                        <h5>Description * </h5>
+                    </div>
+
+                    <div class="description-ux">
+                        <div class="mb-0">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Décrit l'article ..."></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-ux">
+
+                    <div class="title-ux">
+                        <h5> Taille * </h5>
+                    </div>
+
+                    <div class="position-ux">
+
+                        <select class="mul-select" multiple="true" required>
+                            <option>--sélectionner les tailles--</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card-ux">
+
+                    <div class="title-ux">
+                        <h5> Couleur *</h5>
+                    </div>
+
+                    <div class="position-ux">
+                        <div class="group-color">
+                            <select class="mul-select1" multiple="true" required>
+
+                                <option>-sélectionner les couleurs-</option>
+
+                                <option value="blanche" class="color-b">Blanche</option>
+                                <option value="noir">Noir <li class="color-item-c" id="black"></li>
+                                </option>
+                                <option value="rouge">Rouge <li class="color-item-c" id="red"></li>
+                                </option>
+                                <option value="gris">Bleue <li class="color-item-c" id="blue"></li>
+                                </option>
+
+
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-ux">
+
+                    <div class="title-ux">
+                        <h5> Prix *</h5>
+                    </div>
+
+                    <div class="position-ux">
+
+                        <input class="form-control" type="number" placeholder="0.00 Fcfa">
+
+                    </div>
+                </div>
+
+
+                <div class="valider-enligne">
+
+                    <button type="submit" class="btn btn-outline-info">Dans le brouillon</button>
+
+                    <button type="submit" class="btn btn-secondary">Mettre en ligne</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!--debut footer-->
+
+    <div class="pos-footer">
+        <section class="barriere">
+            <div class="autoplayin">
+                <span class="txt t1">La priorité de notre service client, c’est votre sécurité et la protection de vos
+                    données
+                    personnelles - Achète partour et tout en un clic avec Market Online (mo.com) &nbsp;</span>
+                <span class="txt t2">&nbsp;</span>
+            </div>
+
+        </section>
+
+        <section id="footerG">
+
+            <footer class="py-5">
+                <div class="row">
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 max-auto mt-3">
+                        <ul class="nav flex-column">
+
+                            <li class="titlef">Pages.</li>
+
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acceuil</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Devenir
+                                    Vendeur</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Qui sommes
+                                    nous?</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacts</a></li>
+                        </ul>
+                        <br>
+                    </div>
+
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 max-auto mt-3">
+                        <ul class="nav flex-column">
+
+                            <li class="titlef">Conditions d'utilisation.</li>
+
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politique de
+                                    Confidentialité</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Publicité sur
+                                    mo</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Aide</a></li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 max-auto mt-3">
+                        <ul class="nav flex-column">
+
+                            <li class="titlef">Applications Mobiles.</li>
+
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 max-auto mt-3">
+                        <form>
+                            <h5 class="bg30">Newsletter.</h5>
+                            <p class="bg35">Restez les premiers informés.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="E-mail... ">
+                                <button class="btn btn-outline-primary" type="button">S'inscrire</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="justify-content-between py-4 my-4 border-top">
+                    <div class="lion">
+                        <h6>&copy; 2021 Market Online | mo.com, tous droits réservés.</h6>
+                        <ul class="list-unstyled d-flex">
+                            <div class="bg65">
+                                <li class="ms-3"><a class="fab fa-twitter" href="#">
+                                        <use xlink:href="#twitter" />
+                                    </a></li>
+                                <li class="ms-3"><a class="fab fa-instagram" href="#">
+                                        <use xlink:href="#instagram" />
+                                    </a></li>
+                                <li class="ms-3"><a class="fab fa-facebook" href="#"></a>
+                                    <use xlink:href="#facebook" /></a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    </section>
+    <!--fin footer-->
+
+    <!---Debut store search magasin--->
+
+    <section class=" search--magasin ">
+
+        <div class="search--ma">
+            <a href="#popup-m" class="button"><i class="bi bi-search"></i></a>
+            <div id="popup-m" class="overlat">
+                <div class="popup-xm">
+                    <h2>Trouver un magasin</h2>
+                    <a href="#" class="close-xm">&times;</a>
+                    <div class="content-xm">
+                        <div class="search-xxm">
+
+                            <div class="main">
+                                <input type="text" name="Search" placeholder="">
+                                <button>Trouver</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!---Fin store search--->
+
+
+
+    <!-- Debut Chatbot-->
+
+    <section class="autochat">
+
+        <div class="chat_icon">
+            <i class="bi bi-chat-text"></i>
+        </div>
+
+        <div class="chat_box">
+
+        </div>
+
+    </section>
+
+    <!-- fin Chatbot-->
+
+
+
+    <!--boutton retour-->
+    <button id="back-to-top-btn"><i class="fas fa-angle-up"></i></button>
+
+
+</body>
+
+
+<script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            } else {
+                accordionItemBody.style.maxHeight = 0;
+            }
+
+        });
+
+    });
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".mul-select").select2({
+            placeholder: "selectionner les tailles........*", //placeholder
+            tags: true,
+            tokenSeparators: ['/', ',', ';', " "]
+        });
+    })
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".mul-select1").select2({
+            placeholder: "selectionner les couleurs...*", //placeholder
+            tags: true,
+            tokenSeparators: ['/', ',', ';', " "]
+        });
+    })
+</script>
+
+
+
+<script>
+
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+
+    previewBeforeUpload("file-1");
+    previewBeforeUpload("file-2");
+    previewBeforeUpload("file-3");
+
+</script>
+
+<!--script-->
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScroll: true
+    });
+</script>
+
+
+<script src="fonctionnalites.js"></script>
+<script src="suggestions.js"></script>
+<script src="autochat.js"></script>
+<script src="barrefooter.js"></script>
+<script src="btnretour.js"></script>
+<script src="aide.js"></script>
+<script src="scroll.js"></script>
+<script src="scrollnav.js"> </script>
+<script src="profilesx.js"></script>
+
+<script src="like.js"></script>
+
+<script src="tendance.js"></script>
+
+
+<!--script carousel-->
+
+<script src="js/mdl/jquery.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdeliver.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+
+<script>
+    $(document).ready(function (e) {
+        $('#formulaireIDuser').submit(function (e) {
+            e.preventDefault();
+            var form = new FormData($(this)[0]);
+
+            // var buttonDefault = $('#<?= $id_form ?>').text();
+            var button = $('#submit')
+            button.attr('disabled', true);
+
+            $.ajax({
+                type: 'POST',
+                url: $(this).attr('action'),
+                data: form,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    button.attr('disabled', false);
+                    //button.text(buttonDefault);
+
+                    if (result.status == "success") {
+                        window.location.reload();
+                    } else {
+                        console.log('eexee');
+                        // new swal("", result.message, result.status);
+                    }
+                }
+            });
+
+        });
+
+    });
+</script>
+
+
+
+</html>

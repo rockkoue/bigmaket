@@ -1,0 +1,14 @@
+ 
+ liens  vers les polices  d ecriture
+ 
+ -- fonts.google.com 
+ https://fontawesome.com/
+ 
+ frameworks ---
+ 
+ 
+ Bootstrap : https://getbootstrap.com/
+ 
+ https://ionicframework.com/
+ 
+ 

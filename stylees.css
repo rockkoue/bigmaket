@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*Debut langue*/
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.logo img{
+  position: relative;
+  margin: 3px;
+  width: 140px;
+  height: 50px;
+  left: 40px;
+}
+
+nav{
+  width: 1100px;
+  margin:0 auto;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+
+.langmenu{
+  position: relative;
+  right: 40px;
+  bottom: -15px;
+  width: 107px;
+  margin: -5px; 
+  
+}
+
+.select-langmenu{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(228, 225, 225);
+  position:relative;
+}
+
+
+
+.select-langmenu select{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  padding-left: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance:none ;
+   cursor: pointer;
+   
+}
+
+.select-langmenu select:hover{
+  background: rgb(241, 236, 234);
+  border-radius: 5px;
+}
+
+.select-langmenu:after{
+  content: 'expand_more';
+  font-family: 'material icons';
+  position: absolute;
+  font-size: 24px;
+  color: #666;
+  right: 5px;
+  top: 53%;
+  transform: translateY(-50%);
+  pointer-events:none ;
+}
+/* fin langue*/
+
+
+
+
+
+/* debut inscription*/
+
+.Inscriptions{
+    background:linear-gradient(100deg, #dbd8d9,#c0b5c7,rgb(255, 245, 245));
+    position: relative;
+    height: 780px; 
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    position: relative;
+    background: rgb(250, 249, 249);
+    box-shadow: rgb(0,0,0) 0px 5px 5px;
+    width: 700px;
+    left: 327px;
+    bottom: -30px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .servicec{
+  font-size: 20px;
+  color: rgb(57, 57, 223);
+}
+
+.container .servicec:hover{
+  color: rgb(230, 77, 77);
+}
+
+.container h5{
+    transform: translatex(20%);
+    position: relative;
+    color: rgb(165, 164, 164);
+    font-size: 25px;
+    font-weight: 600;
+    bottom: -30px;
+    text-align: center;
+}
+
+.container h4 {
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  bottom: -10px;
+  text-align: center;
+  
+}
+
+.container h3{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  bottom: -10px;
+ 
+}
+
+.container h6{
+  font-size: 17px;
+  font-weight: 500;
+  color: #666464;
+}
+
+
+.form{
+    padding: 50px 35px;
+}
+
+.form-group{
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-group label{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(50%);
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input{
+    outline: none;
+    transform: translate(100%);
+    transition: all 0.2s ease;
+    border: 2px solid #91a191;
+    caret-color: #d87187;
+    display: block;
+    border-radius: 3px;
+    width: 50%;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.form-group input:focus,
+.form-group.valid input{
+    border-color: #d87187;
+  }
+
+.form input::placeholder{
+    color: #b3b2b4;
+    font-size: 15px;
+}
+
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    visibility: hidden;
+}
+
+
+
+.form-group span{
+    position: absolute;
+    bottom: -6px;
+    left: 311px;
+    font-weight: bolder;
+    font-size: 13px;
+    
+    font-style: italic;
+    visibility: hidden;
+}
+
+.form-group.success input{
+    border-color: #2ecc71;
+}
+
+.form-group.error input{
+    border-color: #e74c3c;
+}
+
+.form-group.error span{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-group.success i.ion-ios-checkmark{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-group.error i.ion-android-alert{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form #submit{
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #d87187;
+    transform: translate(100%);
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 50%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1rem;
+    bottom: -5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background: brown
+}
+
+
+.password-icon{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 47%;
+  font-size: 13px;
+  transition: all 0.2s;
+  right: 45px;
+}
+
+.password-icon:hover{
+  cursor: pointer;
+  color: #fa636d;
+
+
+}
+
+.password-icon .fa-eye-slash{
+  display: none;
+}
+
+.condition a{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.ins{
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 2px;
+    text-align: left;
+    color: rgb(163, 182, 145);
+    width: 270px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+}
+
+.ins a {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inss{
+  position: relative;
+  bottom: -11px;
+  width: 72%;
+  left: -10px;
+  color: rgb(163, 182, 145);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+.baspages{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(236, 234, 234);
+
+}
+
+.quick-links{
+ display: flex;
+ width: 400px;
+ height: 70px;
+ margin: auto;
+}
+
+.quick-links ul{
+ display: flex;
+
+}
+
+.quick-items{
+ list-style: none;
+}
+
+.quick-items a{
+ position: relative;
+ top: 20px;
+ text-decoration: none;
+ padding: 0px 15px;
+ color: blue;
+ font-size: 18px;
+ font-weight: 500;
+}
+
+.quick-items a:hover{
+ text-decoration: underline;
+}
+
+.copy-links{
+ position: relative;
+ top: -20px;
+ width: 455px;
+ font-size: 20px;
+ margin: auto;
+}
+
+
+.vendeurs{
+  color: #2ecc71;
+}
+
+
+
+.containerr{
+  position: absolute;
+  top: 320px;
+  right: 745px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 250px;
+
+}
+
+.borders{
+  position: absolute;
+  bottom: 150px;
+  right: 390px;
+  width: 0.2px;
+  height: 415px;
+  background: rgb(231, 229, 229);
+}
+
+
+
+.containerr h5{
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  color: #717072;
+  letter-spacing: 5px;
+  font-weight: 800;
+  text-align: center;
+  
+}
+
+.containerr .tiret1{
+  position: absolute;
+  bottom: 35px;
+  width: 40px;
+  border: 2px solid gray;
+  left: 27px;
+}
+
+
+
+
+.btnRow{
+  position: relative;
+  justify-self: space-evenly;
+  box-shadow: 1px 1px 5px -4px rgba(0,0,0,2);
+  height: 45px;
+  width: 200px;
+  display: flex;
+  bottom: -30px;
+  left: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+
+}
+
+
+.btnGroup img {
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  
+}
+
+
+
+
+
+
+/* fin inscription*/
+  
+  .popup-screen{
+    position: fixed;
+    z-index: 999999; 
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.5s ease;
+    transition-property: visibility;
+  }
+  
+  .popup-screen.active{
+    visibility: visible;
+  }
+  
+  .popup-box{
+    position: relative;
+    margin: 20% auto;
+    width: 40%;
+    background: rgba(228, 228, 228);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 80px 40px;
+    top: -100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    display: flex;
+    transform: scale(0);
+    transition: 0.5s ease;
+    transition-property: transform;
+    
+  }
+  
+  .popup-screen.active .popup-box{
+    transform: scale(1);
+  }
+  
+  .popup-box h2{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(15, 15, 14);
+   
+  }
+  
+ 
+  .popup-box .btn{
+    color: #fff;
+    background: #d87187;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 5px;
+  }
+
+  .popup-box .btn:hover{
+    background: brown;
+  }
+  
+  .close-btn{
+    position: absolute;
+    font-size: 2em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    transition-property: opacity;
+  }
+  
+  .close-btn:hover{
+     color: rgb(245, 115, 115);
+  }
+  
+
+  
+  .btntel .telbtn{  
+    position: absolute;
+    bottom: 387px;
+    left: 706px;
+    text-align: center;
+    align-items: center;
+    background-color: #d3cdcf;
+    text-align: center;
+    color: rgb(20, 4, 56);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  .btntel .telbtn:hover{
+      color: white;
+      background-color: rgb(5, 5, 77);
+  }
+
+
+  .btnemail .emailbtn{  
+    position: absolute;
+    bottom: 442px;
+    left: 736px;
+    text-align: center;
+    align-items: center;
+    background-color: #d3cdcf;
+    text-align: center;
+    color: rgb(20, 4, 56);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 3px;
+    border-radius: 3px;
+  }
+
+  .btnemail .emailbtn:hover{
+      color: white;
+      background-color: rgb(5, 5, 77);
+  }
+
+  .form-group a{
+    color: black;
+  }
+
+
+
+.créant{
+  position: relative;
+  left: -10px ;
+}
+
+.ou{
+  position: absolute;
+  bottom: -2px;
+  left: 172px;
+  cursor: pointer;
+  color: rgb(117, 117, 124);
+  text-align: center;
+  align-items: center;
+ font-size: 16px;
+ 
+}
+
+.ou:hover{
+ color: brown;
+}
+
+
+.form-group img{
+  position: relative;
+  margin: -5px;
+  bottom: 3px;
+  height: 15px;
+}
+
+  .telephone{
+    background: rgb(250, 249, 249);
+    box-shadow: rgb(0,0,0) 0px 5px 5px;
+    width: 400px;
+    border-radius: 10px;
+    transform: translate(118%, 10%);
+    
+  }
+
+
+  .telephone h5{
+    position: relative;
+    font-size: 30px;
+    color: #91a191;
+    font-weight: 600;
+    bottom: -10px;
+    text-align: center;
+}
+
+.form-tel label{
+  position: relative;
+  left: -13px;
+  display: block;
+  margin-bottom: 1px;
+  font-size: 18px;
+  color: rgb(31, 31, 160);
+}
+
+  .registre  #ph{
+    background: rgb(224, 224, 253);
+    position:absolute;
+    left: 22px;
+    outline: none;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    bottom: 195px;
+    caret-color: #d87187;
+    display: block;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+
+  }
+
+  .registre #sms{
+    position: absolute;
+    background: rgb(224, 224, 253);
+    left: 265px;
+    outline: none;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    bottom: 196px;
+    caret-color: #d87187;
+    cursor: pointer;
+    width: 25%;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    padding: 11px;
+    border: none;
+    font-size: 15px;
+
+  }
+
+  .form-tel input{
+    background: rgb(241, 241, 248);
+    position: relative;
+    left: 65px;
+    outline: none;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    border:none;
+    caret-color: #d87187;
+    display: block;
+    border-radius: 0px;
+    width: 50%;
+    padding: 10px;
+    font-size: 17px;
+    bottom: -3px;
+}
+
+
+.form-code input{
+  background: rgb(241, 241, 248);
+  position: relative;
+  left: -12px;
+  outline: none;
+  transition: all 0.2s ease;
+  border:none;
+  caret-color: #d87187;
+  display: block;
+  border-radius: 5px;
+  width: 104%;
+  padding: 10px;
+  font-size: 17px;
+  bottom: 5px;
+  border: 1px solid rgb(168, 168, 241);
+}
+
+
+.form #submitt{
+  position: relative;
+  font-family:Arial, Helvetica, sans-serif;
+  background: #d87187;
+  border: none;
+  outline: none;
+  color: #fff;
+  left: -12px;
+  width: 104%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  bottom: -5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+
+
+.barriere{
+  background: rgb(248, 248, 248);
+  height: 32px;
+  margin-top: 30px;
+}
+
+.autoplayin{
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  
+}
+.txt {
+  position: relative;
+  white-space: nowrap;
+  font-size: 24px;
+  left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  animation: scrollTxt 20s linear infinite;
+}
+
+
+@keyframes scrollTxt {
+  0%{
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
